@@ -1,0 +1,9 @@
+table Icon
+  Caption: 
+  Command: dolphin
+  Icon: /home/ghisguth/.idesktop/icons/kfm.png
+  Width: 20
+  Height: 20
+  X: 30
+  Y: 150
+end

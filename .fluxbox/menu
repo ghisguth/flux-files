@@ -1,0 +1,41 @@
+[begin] (fluxbox)
+[submenu] (Main) </usr/share/pixmaps/blackbox_16x16.xpm>
+[exec] (Xterm) {xterm} </usr/share/pixmaps/yakuake-16.xpm>
+[exec] (GVim) {gvim} </usr/share/pixmaps/vim-16.xpm>
+[exec] (QtCreator) {qtcreator} </usr/share/pixmaps/qtcreator_logo_16.png>
+[exec] (Idea) {JDK_HOME=/usr/lib/jvm/java-6-sun /opt/lib/idea-9886/bin/idea.sh} </opt/lib/idea-9886/bin/idea16.png>
+[exec] (Kate) {kate} </usr/share/pixmaps/kate.xpm>
+#[submenu] (Browser) </usr/share/pixmaps/chromium-browser.png>
+[exec] (chromium) {chromium-browser} </usr/share/pixmaps/chromium-browser.png>
+[exec] (opera) {opera} </usr/share/pixmaps/opera.xpm>
+[exec] (firefox) {firefox} </usr/share/pixmaps/firefox-3.0.png>
+[exec] (Thunderbird Mail) {thunderbird} </usr/share/pixmaps/thunderbird.png>
+[exec] (Sunbird) {sunbird} </usr/share/pixmaps/sunbird.png>
+[exec] (Psi) {/usr/bin/psi} </usr/share/pixmaps/psi.xpm>
+#[end]
+[exec] (Dolphin) {dolphin} </usr/share/pixmaps/utilities-file-archiver.xpm>
+[exec] (uTorrent) {wine /home/ghisguth/.wine/drive_c/windows/profiles/ghisguth/Program\ Files/uTorrent/uTorrent.exe}
+#[submenu] (Dev)
+[exec] (kdevelop) {kdevelop} </usr/share/pixmaps/kdevelop.xpm>
+[exec] (codelite) {codelite} </usr/share/codelite/images/cubes.png>
+#[end]
+#[submenu] (Util)
+[exec] (mc) {xterm -e mc} </usr/share/pixmaps/mc.xpm>
+[exec] (htop) {xterm -e htop} </usr/share/pixmaps/htop.png>
+[exec] (dstat) {xterm -e dstat}
+[exec] (powertop) {xterm -e 'sudo powertop'}
+#[end]
+[end]
+[separator]
+[include] (/etc/X11/fluxbox/fluxbox-menu)
+[separator]
+#[submenu] (Keyboards)
+#[exec] (us) {setxkbmap us}
+#[exec] (ru) {setxkbmap ru}
+#[end]
+[exec] (Lock) {xtrlock}
+[exec] (Suspend) {zenity --question --title='Suspend?' --text='Suspend now?' && gksu "s2ram --force"}
+[exec] (Hibernate) {zenity --question --title='Hibernate?' --text='Hibernate now?' && gksu "hibernate"}
+[exec] (Shutdown) {zenity --question --title='Shutdown?' --text='Shutdown now?' && gksu "shutdown -h now"}
+[exec] (Restart) {zenity --question --title='Restart?' --text='Restart now?' && gksu "shutdown -r now"}
+[end]

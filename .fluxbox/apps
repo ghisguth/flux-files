@@ -1,0 +1,11 @@
+[app] (name=xterm) (class=XTerm)
+  [Alpha]	{233 165}
+[end]
+[app] (name=amarokapp) (class=Amarokapp) (role=PlaylistWindow)
+  [Alpha]	{180 140}
+[end]
+[app] (name=dolphin) (class=Dolphin) (role=D3lphin)
+  [Alpha]	{213 187}
+[end]
+[app] (name=codelite) (class=Codelite)
+[end]

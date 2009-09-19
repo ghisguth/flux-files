@@ -1,0 +1,45 @@
+------------------------------------------
+Log File: /home/ghisguth/.fluxbox/log
+Fluxbox version: 1.1.1
+Compiled: May  1 2009 02:09:17
+Compiler: GCC
+Compiler version: 4.4.0
+
+Defaults:
+    menu: /etc/X11/fluxbox/fluxbox.menu-user
+   style: /usr/share/fluxbox/styles/Debian
+    keys: /etc/X11/fluxbox/keys
+    init: /etc/X11/fluxbox/init
+     nls: /usr/share/fluxbox/nls
+
+Compiled options (- => disabled): 
+-DEBUG
+EWMH
+GNOME
+IMLIB2
+NLS
+REMEMBER
+RENDER
+SHAPE
+SLIT
+TOOLBAR
+XFT
+XINERAMA
+XMB
+XPM
+
+------------------------------------------
+Keys: Invalid key/modifier on line 60): None XF86LaunchD       :Exec xbacklight -time 10 -steps 1 - 10
+Keys: Invalid key/modifier on line 61): None XF86LaunchE       :Exec xbacklight -time 1 -steps 1 + 10
+Keys: Invalid key/modifier on line 60): None XF86LaunchD       :Exec xbacklight -time 10 -steps 1 - 10
+Keys: Invalid key/modifier on line 61): None XF86LaunchE       :Exec xbacklight -time 1 -steps 1 + 10
+Keys: Invalid key/modifier on line 60): None XF86LaunchD       :Exec xbacklight -time 10 -steps 1 - 10
+Keys: Invalid key/modifier on line 61): None XF86LaunchE       :Exec xbacklight -time 1 -steps 1 + 10
+Keys: Invalid key/modifier on line 60): None XF86LaunchD       :Exec xbacklight -time 10 -steps 1 - 10
+Keys: Invalid key/modifier on line 61): None XF86LaunchE       :Exec xbacklight -time 1 -steps 1 + 10
+Keys: Invalid key/modifier on line 60): None XF86LaunchD       :Exec xbacklight -time 10 -steps 1 - 10
+Keys: Invalid key/modifier on line 61): None XF86LaunchE       :Exec xbacklight -time 1 -steps 1 + 10
+Keys: Invalid key/modifier on line 60): None XF86LaunchD       :Exec xbacklight -time 10 -steps 1 - 10
+Keys: Invalid key/modifier on line 61): None XF86LaunchE       :Exec xbacklight -time 1 -steps 1 + 10
+Keys: Invalid key/modifier on line 60): None XF86LaunchD       :Exec xbacklight -time 10 -steps 1 - 10
+Keys: Invalid key/modifier on line 61): None XF86LaunchE       :Exec xbacklight -time 1 -steps 1 + 10

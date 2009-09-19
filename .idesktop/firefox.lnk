@@ -1,0 +1,9 @@
+table Icon
+  Caption: 
+  Command: firefox
+  Icon: /home/ghisguth/.idesktop/icons/firefox.png
+  Width: 20
+  Height: 20
+  X: 30
+  Y: 90
+end

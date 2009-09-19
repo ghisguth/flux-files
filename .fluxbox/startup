@@ -1,0 +1,70 @@
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# You can set your favourite wallpaper here if you don't want
+# to do it from your style.
+#
+# fbsetbg -f /home/ghisguth/pictures/wallpaper.png
+#
+# This sets a black background
+
+/usr/bin/fbsetroot -solid black
+#fbsetbg -f /home/ghisguth/.idesktop/pictures/forest.png
+#fbsetbg -f /home/ghisguth/.idesktop/pictures/221372_1194521817_large.jpg
+
+# This shows the fluxbox-splash-screen
+# fbsetbg -C /usr/share/fluxbox/splash.jpg
+
+# Other examples. Check man xset for details.
+#
+# Turn off beeps:
+# xset -b
+#
+# Increase the keyboard repeat-rate:
+# xset r rate 195 35
+#
+# Your own fonts-dir:
+# xset +fp "/home/ghisguth/.fonts"
+#
+# Your favourite mouse cursor:
+# xsetroot -cursor_name right_ptr
+#
+# Change your keymap:
+# xmodmap "/home/ghisguth/.Xmodmap"
+
+#setxkbmap -model pc104 -layout us
+kxkb &
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+#xcompmgr -c &
+# unclutter -idle 2 &
+# wmnd &
+#wmmixer -w &
+#idesk &
+#wmmount -- -w &
+#wmload -w -s &
+#wmnd &
+#wmxres &
+#wmavgload -w &
+#wmfire &
+#wmbattary &
+
+nm-applet --sm-disable &
+#/usr/lib/gnome-applets/mixer_applet2 &
+kmix &
+#guidance-power-manager &
+gnome-power-manager &
+
+#conky &
+
+fbsetbg -f /home/ghisguth/.idesktop/pictures/221372_1194521817_large.jpg
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+#exec /usr/bin/fluxbox
+# or if you want to keep a log:
+exec /usr/bin/fluxbox -log "/home/ghisguth/.fluxbox/log"

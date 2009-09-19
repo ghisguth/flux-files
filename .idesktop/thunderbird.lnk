@@ -1,0 +1,9 @@
+table Icon
+  Caption: 
+  Command: thunderbird
+  Icon: /usr/share/thunderbird/icons/icon64.png
+  Width: 20
+  Height: 20
+  X: 30
+  Y: 120
+end

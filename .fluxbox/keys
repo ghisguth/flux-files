@@ -1,0 +1,99 @@
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Mouse2 :StartTabbing
+
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Double Mouse1 :Shade
+OnTitlebar Mouse3 :WindowMenu
+
+!mouse actions added by fluxbox-update_configs
+OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing BottomRight}
+
+!mouse actions added by fluxbox-update_configs
+OnToolbar Mouse4 :NextWorkspace
+OnToolbar Mouse5 :PrevWorkspace
+
+OnDesktop Mouse1 :HideMenus
+OnDesktop Mouse2 :WorkspaceMenu
+OnDesktop Mouse3 :RootMenu
+OnDesktop Mouse4 :NextWorkspace
+OnDesktop Mouse5 :PrevWorkspace
+
+Mod1 Tab :NextWindow
+Mod1 Shift Tab :PrevWindow
+Control Shift F1 :Workspace 1
+Control Shift F2 :Workspace 2
+Control Shift F3 :Workspace 3
+Control Shift F4 :Workspace 4
+Control Shift F5 :Workspace 5
+Control Shift F6 :Workspace 6
+Control Shift F7 :Workspace 7
+Control Shift F8 :Workspace 8
+Control Shift F9 :Workspace 9
+Control Shift F10 :Workspace 10
+Control Shift F11 :Workspace 11
+Control Shift F12 :Workspace 12
+
+Mod1 F4 :Close
+Mod4 r :ExecCommand xterm
+Mod4 c :ExecCommand xcalc
+Mod4 k :ExecCommand kwrite
+Mod4 y :ExecCommand ¨date | osd_cat -c white -f -*-lucida-medium-r-*-*-20-*-*-*-*-*-*-* -o 20 -p top -A center¨
+Mod4 a :ToggleDecor
+#Mod4 Mod1 bracketright  :SetAlpha +5 +5
+#Mod4 Mod1 bracketleft   :SetAlpha -5 -5
+Mod4 e :RootMenu
+Mod4 f :Fullscreen
+#Mod4 d :ShowDesktop
+Mod4 d :ToggleCmd {ShowDesktop} {DeIconify all originquiet}
+Mod4 q :KillWindow
+Mod4 s :Shade
+Mod1 F2 :Exec fbrun
+
+Control Mod1 Left :prevWorkspace
+Control Mod1 Right :nextWorkspace 
+
+None XF86AudioLowerVolume       :Exec amixer sset Master,0 5%-
+None XF86AudioRaiseVolume       :Exec amixer sset Master,0 5%+
+None XF86AudioMute              :Exec amixer sset Master,0 toggle
+
+None XF86LaunchD       :Exec xbacklight -time 10 -steps 1 - 10
+None XF86LaunchE       :Exec xbacklight -time 1 -steps 1 + 10
+
+## ResizeMode (Window, Resize) - when Mod4 w Mod4 r is pressed, all keys except the arrow keys are disabled.  Press escape to exit this mode.
+Mod4 w Mod4 r               :KeyMode ResizeMode
+ResizeMode: None Up         :ResizeVertical -2
+ResizeMode: None Down       :ResizeVertical +2
+ResizeMode: None Left       :ResizeHorizontal -2
+ResizeMode: None Right      :ResizeHorizontal +2
+
+## MoveMode (Window, Move) - when Mod4 w Mod4 m is pressed, all keys except the arrow keys are disabled.  Press escape to exit this mode.
+Mod4 w Mod4 t               :KeyMode MoveMode
+MoveMode: None Up           :MoveUp 2
+MoveMode: None Down         :MoveDown 2
+MoveMode: None Left         :MoveLeft 2
+MoveMode: None Right        :MoveRight 2
+
+
+#Hide/Show toolbar with 2 macro commands until Toggle/Reconfigure bug/feature is fixed
+Mod4 comma         :MacroCmd {SetResourceValue session.screen0.toolbar.visible false} {Reconfigure}
+Mod4 period        :MacroCmd {SetResourceValue session.screen0.toolbar.visible true} {Reconfigure}
+
+
+None Print     :Exec import -window root ~/screenshots/desktop_screenshot$(date +%F,%T).png
+Mod4 Print     :Exec import -frame -window $(xprop _NET_ACTIVE_WINDOW -root | awk '{print $5}') ~/screenshots/active_window_screenshot$(date +%F,%T).png
+
+
+Mod4 n :Exec zenity --calendar --text=""
+#Mod4 KP_2 :Exec (date +'Today: %A %b %d';echo;cal -3)| gmessage --file - -buttons "GTK_STOCK_CLOSE" -font "monospace 8" -geometry 500x190 --borderless -default "GTK_STOCK_CLOSE" -center
+#Mod4 KP_3 :Exec (date +'Today: %A %b %d';echo;cal -y)| gmessage --file - -buttons "GTK_STOCK_CLOSE" -font "monospace 8" -geometry 500x525 --borderless -default "GTK_STOCK_CLOSE" -center
+
+#Mod4 F1 :ToggleCmd {ExecCommand setxkbmap -model pc104 -layout ru -variant winkeys} {ExecCommand setxkbmap -model pc104 -layout us} 
+#Mod4 l :ExecCommand setxkbmap -model pc104 -layout ru -variant winkeys
+#Mod4 Cyrillic_de :ExecCommand setxkbmap -model pc104 -layout us
+
+
+Mod4 m :Maximize
+
+
+Mod4 h :Exec /bin/bash /home/ghisguth/hotkey.sh

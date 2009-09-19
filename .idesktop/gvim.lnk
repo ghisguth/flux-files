@@ -1,0 +1,9 @@
+table Icon
+  Caption: 
+  Command: gvim
+  Icon: /home/ghisguth/.idesktop/icons/gvim.png
+  Width: 20
+  Height: 20
+  X: 30
+  Y: 210
+end

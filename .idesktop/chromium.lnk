@@ -1,0 +1,9 @@
+table Icon
+  Caption: 
+  Command: chromium-browser
+  Icon: /home/ghisguth/.idesktop/icons/chromium-browser.png
+  Width: 20
+  Height: 20
+  X: 30
+  Y: 180
+end
